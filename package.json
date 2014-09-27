@@ -1,0 +1,26 @@
+{
+  "name": "simple-dragdrop",
+  "version": "0.0.0",
+  "description": "Drag and Drop widget for Simditor",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.11.1",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Simditor",
+    "dnd",
+    "Drag",
+    "Drop"
+  ],
+  "author": "chord.luo@gmail.com",
+  "license": "MIT"
+}
