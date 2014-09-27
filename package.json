@@ -1,7 +1,7 @@
 {
-  "name": "simple-dragdrop",
+  "name": "simditor-dropzone",
   "version": "0.0.0",
-  "description": "Drag and Drop widget for Simditor",
+  "description": "Drag and Drop uploder module for Simditor",
   "main": "index.js",
   "dependencies": {
     "grunt": "^0.4.5"
@@ -9,7 +9,6 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-coffee": "^0.11.1",
-    "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1"
   },
   "scripts": {
@@ -19,7 +18,9 @@
     "Simditor",
     "dnd",
     "Drag",
-    "Drop"
+    "Drop",
+    "dropzone",
+    "upload"
   ],
   "author": "chord.luo@gmail.com",
   "license": "MIT"

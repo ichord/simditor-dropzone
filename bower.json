@@ -5,7 +5,7 @@
     "ichord <chord.luo@gmail.com>"
   ],
   "description": "simple drag and drop for Simditor",
-  "main": "lib/simditor-dragdrop.js",
+  "main": "lib/simple-dropzone.js",
   "keywords": [
     "simditor",
     "dragdrop",

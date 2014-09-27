@@ -4,18 +4,10 @@ module.exports = (grunt) ->
 
     pkg: grunt.file.readJSON 'package.json'
 
-    sass:
-      select:
-        options:
-          style: 'expanded'
-          bundleExec: true
-        files:
-          'lib/simditor-dragdrop.css': 'src/dragdrop.scss'
-
     coffee:
       select:
         files:
-          'lib/simditor-dragdrop.js': 'src/dragdrop.coffee'
+          'lib/<%= pkg.name %>.js': 'src/dropzone.coffee'
 
     watch:
       styles:
