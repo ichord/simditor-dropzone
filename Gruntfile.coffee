@@ -10,15 +10,16 @@ module.exports = (grunt) ->
           'lib/<%= pkg.name %>.js': 'src/dropzone.coffee'
 
     watch:
-      styles:
-        files: ['src/*.scss']
-        tasks: ['sass']
       scripts:
         files: ['src/*.coffee']
         tasks: ['coffee']
 
-  grunt.loadNpmTasks 'grunt-contrib-sass'
+    connect:
+      uses_defaults: {}
+
+
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-connect'
 
-  grunt.registerTask 'default', ['coffee', 'watch']
+  grunt.registerTask 'default', ['coffee', 'connect', 'watch']

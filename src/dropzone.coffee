@@ -1,7 +1,6 @@
 class Dropzone extends Plugin
 
   _entered: 0
-  _allowedFileTypes: ["image/png", "image/jpeg", "image/gif"]
 
   _init: ->
     @editor = @widget
@@ -16,6 +15,7 @@ class Dropzone extends Plugin
       e.preventDefault()
 
     @imageBtn = @editor.toolbar.findButton "image"
+    
     @editor.body.on "dragover", (e) ->
       e.originalEvent.dataTransfer.dropEffect = "copy"
       e.stopPropagation()
@@ -32,7 +32,7 @@ class Dropzone extends Plugin
       imageFiles = []
       for file in e.originalEvent.dataTransfer.files
         if not @validFile file
-          alert "not allowed file [#{file.name}] whose type is '#{file.type}'"
+          alert "「#{file.name}]」文件不是图片。"
           @hide()
           return false
         imageFiles.push file
@@ -44,11 +44,12 @@ class Dropzone extends Plugin
 
   show: ->
     @imageBtn.setActive true
+
   hide: ->
     @imageBtn.setActive false
     @_entered = 0
 
   validFile: (file) ->
-    @_allowedFileTypes.indexOf(file.type) > -1
+    file.type.indexOf("image/") > -1
     
 Simditor.connect Dropzone
