@@ -1,9 +1,11 @@
-class Dropzone extends Plugin
+class Dropzone extends SimpleModule
+
+  @className: "Dropzone"
 
   _entered: 0
 
   _init: ->
-    @editor = @widget
+    @editor = @_module
     if not @editor.uploader?
       throw new Error "Can't work without 'simple-uploader' module" 
       return
@@ -52,4 +54,4 @@ class Dropzone extends Plugin
   validFile: (file) ->
     file.type.indexOf("image/") > -1
     
-Simditor.connect Dropzone
+@Simditor.connect Dropzone

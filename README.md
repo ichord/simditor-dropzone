@@ -9,7 +9,9 @@
 只需要在 `simditor-all.js` 后引入这个文件即可。
 
 ```html
-<script type="text/javascript" src="[script path]/simditor-all.js"></script>
+<script type="text/javascript" src="[simple module script path]/module.js"></script>
+<script type="text/javascript" src="[simple uploader script path]/uploader.js"></script>
+<script type="text/javascript" src="[script path]/simditor.js"></script>
 <!- .... ->
 <script type="text/javascript" src="[script path]/simditor-dropzone.js"></script>
 ```

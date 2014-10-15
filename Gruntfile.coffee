@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON 'package.json'
 
     coffee:
-      select:
+      src:
         files:
           'lib/<%= pkg.name %>.js': 'src/dropzone.coffee'
 

@@ -1,11 +1,11 @@
 {
-  "name": "simditor-dragdrop",
-  "version": "0.0.1",
+  "name": "simditor-dropzone",
+  "version": "2.0.0",
   "authors": [
     "ichord <chord.luo@gmail.com>"
   ],
   "description": "simple drag and drop for Simditor",
-  "main": "lib/simple-dropzone.js",
+  "main": "lib/simditor-dropzone.js",
   "keywords": [
     "simditor",
     "dragdrop",
@@ -22,6 +22,6 @@
     "package.json"
   ],
   "dependencies": {
-    "simditor": "~1.0.5"
+    "simditor": "2.x"
   }
 }
