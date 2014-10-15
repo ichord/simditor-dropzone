@@ -54,4 +54,4 @@ class Dropzone extends SimpleModule
   validFile: (file) ->
     file.type.indexOf("image/") > -1
     
-@Simditor.connect Dropzone
+Simditor.connect Dropzone
