@@ -1,6 +1,6 @@
 {
   "name": "simditor-dropzone",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "image dropzone for Simditor",
   "main": "lib/simditor-dropzone.js",
   "dependencies": {

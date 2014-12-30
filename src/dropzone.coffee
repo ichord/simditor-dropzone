@@ -1,6 +1,6 @@
 class Dropzone extends SimpleModule
 
-  @className: "Dropzone"
+  @pluginName: "Dropzone"
 
   _entered: 0
 
